@@ -262,11 +262,11 @@ ul {
   }
   .fa {
     padding-top: 80px;
-    margin-left: -60px;
+    margin-left: -55px;
   }
   #audrey {
     height: 100px;
-    margin-left: -15px;
+    margin-left: 0px;
   }
   #mail {
     display: inline;
@@ -274,7 +274,7 @@ ul {
 }
 @media screen and (max-width: 370px) {
   .fa {
-    margin-left: -20px;
+    margin-left: -10px;
   }
   button {
     height: 60px;

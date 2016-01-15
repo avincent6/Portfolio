@@ -4,17 +4,13 @@ body {
   margin: 0;
   font-family: 'raleway', sans-serif;
   text-align: center;
-
 }
 #header {
   height: 70px;
   padding-top: 20px;
   background: none;
   justify-content: space-around;
-
   width: 100%;
-
-
 }
 .hello {
   height: auto;
@@ -30,7 +26,6 @@ p {
 #scripty {
   font-family: 'bitter', sans-serif;
   line-height: 30px;
-
 }
 div {
   margin: 0;
@@ -101,7 +96,6 @@ a:hover {
     transition-property: font-size;
     transition-duration: .3s;
     transition-timing-function: ease-in-out;
-
 }
 ul {
   list-style-type: none;
@@ -252,9 +246,7 @@ ul {
   #header ul {
     justify-content: space-around;
   }
-
 }
-
 @media screen and (max-width: 400px) {
   #footer {
     height: 50%;
@@ -344,7 +336,6 @@ a:hover {
     transition-duration: .3s;
     transition-timing-function: ease-in-out;
 }
-
 }
 @media screen and (max-width: 330px) {
   #name {
@@ -387,8 +378,6 @@ a:hover {
 @media screen and (max-width: 290px) {
   .fa {
     margin-left: -20px;
-
-
   }
 }
 @media screen and (max-width: 300px) {
@@ -419,42 +408,4 @@ a:hover {
   margin-left: -75px;
   margin-top: 40px;
 }
-@media screen and (max-width: 700px) {
-  #header ul {
-
-  }
 }
-
-/*
-.hvr-bubble-top {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-}
-.hvr-bubble-top:before {
-  pointer-events: none;
-  position: absolute;
-  z-index: -1;
-  content: '';
-  border-style: solid;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  left: calc(50% - 10px);
-  top: 0;
-  border-width: 0 10px 10px 10px;
-  border-color: transparent transparent #e1e1e1 transparent;
-}
-.hvr-bubble-top:hover:before, .hvr-bubble-top:focus:before, .hvr-bubble-top:active:before {
-  -webkit-transform: translateY(-10px);
-  transform: translateY(-10px);
-}
-
-*/

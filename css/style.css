@@ -1,0 +1,460 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway|Bitter);
+
+body {
+  margin: 0;
+  font-family: 'raleway', sans-serif;
+  text-align: center;
+
+}
+#header {
+  height: 70px;
+  padding-top: 20px;
+  background: none;
+  justify-content: space-around;
+
+  width: 100%;
+
+
+}
+.hello {
+  height: auto;
+  padding: 4em;
+  background: none;
+  margin: 0;
+  margin-top: 0px;
+}
+p {
+  font-family: 'raleway';
+  text-align: center;
+}
+#scripty {
+  font-family: 'bitter', sans-serif;
+  line-height: 30px;
+
+}
+div {
+  margin: 0;
+  padding: 0;
+}
+button {
+  height: 80px;
+  width: 250px;
+  padding: 20px;
+  border: 2px #336666 solid;
+  color: #336666;
+  font-family: 'raleway', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1000;
+}
+button:hover {
+  opacity: .7;
+}
+#name {
+  flex-grow: 1;
+  width: 100px;
+  order: 1;
+  color: #ff3366;
+  font-size: 16.5px;
+    transition-timing-function: ease-in-out;
+    transition-property: font-size;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+#name:hover {
+    color: #66cccc;
+    font-size: 17px;
+    transition-timing-function: ease-in-out;
+    transition-property: font-size;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+#about {
+  flex-grow: 1;
+  width: 100px;
+  order: 2;
+}
+#work {
+  flex-grow: 1;
+  width: 100px;
+  order: 3;
+  padding-left: -100px;
+}
+a {
+  color: black;
+  padding: 20px;
+  font-size: 16.5px;
+    transition-timing-function: ease-in-out;
+    transition-property: font-size;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    text-decoration: none;
+      cursor: pointer;
+}
+a:hover {
+  color: #66cccc;
+  font-size: 18px;
+    transition-timing-function: ease-in-out;
+    transition-property: font-size;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 18px;
+}
+#water {
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0;
+
+}
+#waves {
+  max-height: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+#photography-btn:hover {
+
+  opacity: .7;
+}
+.water {
+  margin: 0;
+}
+#wave-main-div {
+  margin: 0;
+  margin-bottom: -25px;
+  background: none;
+}
+#photography-btn {
+  height: 80px;
+  width: 250px;
+  padding: 20px;
+  border: 2px #336666 solid;
+  color: #336666;
+  font-family: 'raleway', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  background: rgba(255,255,255,.4);
+  cursor: pointer;
+  position: absolute;
+  z-index: 1000;
+  margin-left: -120px;
+  margin-top: 150px;
+
+}
+.parallax-window {
+    min-height: 500px;
+    background: none;
+}
+#tree {
+  max-width: 100%;
+  max-height: 100%;
+}
+#behance {
+
+  background: white;
+}
+#behance-btn {
+  margin-left: -120px;
+  margin-top: 80px;
+  z-index: 2000;
+}
+#birds {
+
+  max-height: 100%;
+  max-width: 100%;
+  margin-bottom: -4px;
+
+
+}
+#github {
+  height: 240px;
+  padding-top: 150px;
+  background: none;
+  margin-top: 0px;
+}
+#github-btn {
+  margin-left: -120px;
+
+}
+#studio {
+  padding-top: 20px;
+  background: none;
+
+  bottom: 0;
+}
+#studio-btn {
+  margin-left: -120px;
+  margin-top: -300px;
+  color: #336666;
+  border: 2px #336666 solid;
+  background: rgba(255,255,255,.4)
+
+}
+.footer2 {
+  height: 200px;
+}
+#resume-btn {
+  margin-left: -120px;
+  margin-top: 35px;
+  color: #336666;
+  border: 2px #336666 solid;
+  background: rgba(255,255,255,.4)
+}
+#audrey {
+  height: 170px;
+  width: auto;
+  left: 40px;
+}
+.fa {
+  color: #336666;
+  margin-top: -40px;
+}
+#footer {
+  width: 400px;
+  height: 200px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  background: none;
+  text-align: center;
+}
+#portrait {
+  display: inline;
+}
+#mail {
+  margin-top: 50px;
+  display: block;
+}
+
+@media screen and (max-width: 700px) {
+  #photography-btn {
+    margin-top: 50px;
+  }
+  #behance-btn {
+    margin-top: 30px;
+  }
+  #github {
+    height: 120px;
+    padding-top: 50px;
+  }
+  #header ul {
+    justify-content: space-around;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  #footer {
+    height: 50%;
+    width: 50%;
+  }
+  .fa {
+    padding-top: 80px;
+    margin-left: -60px;
+  }
+  #audrey {
+    height: 100px;
+    margin-left: -15px;
+  }
+  #mail {
+    display: inline;
+  }
+}
+@media screen and (max-width: 370px) {
+  .fa {
+    margin-left: -20px;
+  }
+  button {
+    height: 60px;
+    width: 180px;
+    padding: 10px;
+    font-size: 17px;
+  }
+  #studio-btn {
+    margin-left: -90px;
+  }
+  #resume-btn {
+    margin-left: -90px;
+  }
+  #github-btn {
+    margin-left: -90px;
+  }
+  #behance-btn {
+    margin-left: -90px;
+  }
+  #photography-btn {
+  height: 60px;
+  width: 180px;
+  padding: 20px;
+  font-size: 17px;
+  margin-left: -90px;
+  margin-top: 40px;
+}
+body {
+  font-size: 11px;
+}
+a {
+  color: black;
+  padding: 10px;
+  font-size: 12px;
+    transition-timing-function: ease-in-out;
+    transition-property: font-size;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    text-decoration: none;
+      cursor: pointer;
+}
+a:hover {
+  color: #66cccc;
+  font-size: 14px;
+    transition-timing-function: ease-in-out;
+    transition-property: font-size;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+
+}
+#name {
+  flex-grow: 1;
+  width: 100px;
+  order: 1;
+  color: #ff3366;
+  font-size: 12px;
+    transition-timing-function: ease-in-out;
+    transition-property: font-size;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+#name:hover {
+    color: #66cccc;
+    font-size: 14px;
+    transition-timing-function: ease-in-out;
+    transition-property: font-size;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+}
+@media screen and (max-width: 330px) {
+  #name {
+    font-size: 10px;
+  }
+  a {
+    font-size: 10px;
+  }
+  .fa {
+    margin-left: -10px;
+    padding-top: 60px;
+  }
+  button {
+    height: 60px;
+    width: 150px;
+    padding: 15px;
+    font-size: 15px;
+  }
+  #studio-btn {
+    margin-left: -75px;
+  }
+  #resume-btn {
+    margin-left: -75px;
+  }
+  #github-btn {
+    margin-left: -75px;
+  }
+  #behance-btn {
+    margin-left: -75px;
+  }
+  #photography-btn {
+  height: 60px;
+  width: 150px;
+  padding: 15px;
+  font-size: 15px;
+  margin-left: -75px;
+  margin-top: 40px;
+}
+}
+@media screen and (max-width: 290px) {
+  .fa {
+    margin-left: -20px;
+
+
+  }
+}
+@media screen and (max-width: 300px) {
+
+  button {
+    height: 40px;
+    width: 150px;
+    padding: 12px;
+    font-size: 15px;
+  }
+  #studio-btn {
+    margin-left: -75px;
+  }
+  #resume-btn {
+    margin-left: -75px;
+  }
+  #github-btn {
+    margin-left: -75px;
+  }
+  #behance-btn {
+    margin-left: -75px;
+  }
+  #photography-btn {
+  height: 40px;
+  width: 150px;
+  padding: 12px;
+  font-size: 15px;
+  margin-left: -75px;
+  margin-top: 40px;
+}
+@media screen and (max-width: 700px) {
+  #header ul {
+
+  }
+}
+
+/*
+.hvr-bubble-top {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+.hvr-bubble-top:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  border-style: solid;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  left: calc(50% - 10px);
+  top: 0;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #e1e1e1 transparent;
+}
+.hvr-bubble-top:hover:before, .hvr-bubble-top:focus:before, .hvr-bubble-top:active:before {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+*/

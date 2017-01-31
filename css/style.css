@@ -1,32 +1,37 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway|Bitter);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500|Bitter|Nunito+Sans);
 
 body {
   margin: 0;
-  font-family: 'raleway', sans-serif;
-  text-align: center;
-  color: #336666;
+  font-family: 'nunito sans', sans-serif;
+  text-align: left;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  background: #77DEFF;
+  letter-spacing: 1px;
+}
+h1 {
+  font-weight: 400;
+  letter-spacing: 2px;
+
 }
 #header {
   height: 70px;
-  padding-top: 20px;
+  padding-top: 10px;
   background: none;
-  justify-content: space-around;
   width: 100%;
+  color: white;
 }
 .hello {
   height: auto;
   padding: 4em;
-  background: none;
-  margin: 0;
-  margin-top: 0px;
 }
 p {
-  font-family: 'raleway';
-  text-align: center;
-  color: #336666;
+  font-family: 'Roboto';
+  color: white;
 }
 #scripty {
-  font-family: 'bitter', sans-serif;
+  font-family: 'open sans', sans-serif;
   line-height: 30px;
 }
 div {
@@ -51,168 +56,49 @@ button:hover {
   opacity: .7;
 }
 #name {
-  flex-grow: 1;
-  width: 100px;
-  order: 1;
   color: #ff3366;
-  font-size: 16.5px;
+  width: 95px;
     transition-timing-function: ease-in-out;
-    transition-property: font-size;
+    transition-property: width;
     transition-duration: .3s;
     transition-timing-function: ease-in-out;
 }
 #name:hover {
     color: #66cccc;
-    font-size: 17px;
+    width: 97px;
     transition-timing-function: ease-in-out;
-    transition-property: font-size;
-    transition-duration: .3s;
-    transition-timing-function: ease-in-out;
-}
-#about {
-  flex-grow: 1;
-  width: 100px;
-  order: 2;
-}
-#work {
-  flex-grow: 1;
-  width: 100px;
-  order: 3;
-  padding-left: -100px;
-}
-a {
-  color: #336666;
-  padding: 20px;
-  font-size: 16.5px;
-    transition-timing-function: ease-in-out;
-    transition-property: font-size;
-    transition-duration: .3s;
-    transition-timing-function: ease-in-out;
-    text-decoration: none;
-      cursor: pointer;
-}
-a:hover {
-  color: #66cccc;
-  font-size: 18px;
-    transition-timing-function: ease-in-out;
-    transition-property: font-size;
+    transition-property: width;
     transition-duration: .3s;
     transition-timing-function: ease-in-out;
 }
 ul {
   list-style-type: none;
-  margin: 0;
+  margin-left: 100px;
   display: flex;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   justify-content: flex-start;
-  margin: 0;
-  padding: 18px;
+  padding: 0px;
+  align-items: center;
 }
-#water {
+ul:first-child {
+  margin: 20px;
+}
+.left {
+  width: 150px;
   height: 100%;
-  width: 100%;
-  margin: 0;
-
-}
-#waves {
-  max-height: 100%;
-  max-width: 100%;
-  position: relative;
-}
-
-#photography-btn:hover {
-
-  opacity: .7;
-}
-.water {
-  margin: 0;
-}
-#wave-main-div {
-  margin: 0;
-  margin-bottom: -25px;
-  background: none;
-}
-#photography-btn {
-  height: 80px;
-  width: 250px;
-  padding: 20px;
-  border: 2px #336666 solid;
-  color: #336666;
-  font-family: 'raleway', sans-serif;
-  font-size: 20px;
-  text-align: center;
-  background: rgba(255,255,255,.4);
-  cursor: pointer;
-  position: absolute;
-  z-index: 1000;
-  margin-left: -120px;
-  margin-top: 150px;
-
-}
-.parallax-window {
-    min-height: 500px;
-    background: none;
-}
-#tree {
-  max-width: 100%;
-  max-height: 100%;
-}
-#behance {
-
   background: white;
+  opacity: .5;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: -1;
 }
-#behance-btn {
-  margin-left: -120px;
-  margin-top: 80px;
-  z-index: 2000;
-}
-#birds {
 
-  max-height: 100%;
-  max-width: 100%;
-  margin-bottom: -4px;
-
-
-}
-#github {
-  height: 240px;
-  padding-top: 150px;
-  background: none;
-  margin-top: 0px;
-}
-#github-btn {
-  margin-left: -120px;
-
-}
-#studio {
-  padding-top: 20px;
-  background: none;
-
-  bottom: 0;
-}
-#studio-btn {
-  margin-left: -120px;
-  margin-top: -300px;
-  color: #336666;
-  border: 2px #336666 solid;
-  background: rgba(255,255,255,.4)
-
-}
-.footer2 {
-  height: 200px;
-}
-#resume-btn {
-  margin-left: -120px;
-  margin-top: 35px;
-  color: #336666;
-  border: 2px #336666 solid;
-  background: rgba(255,255,255,.4)
-}
 #audrey {
   height: 170px;
   width: auto;
-  left: 40px;
+  left: 30px;
 }
 .fa {
   color: #336666;
@@ -235,18 +121,8 @@ ul {
 }
 
 @media screen and (max-width: 700px) {
-  #photography-btn {
-    margin-top: 50px;
-  }
-  #behance-btn {
-    margin-top: 30px;
-  }
-  #github {
-    height: 120px;
-    padding-top: 50px;
-  }
   #header ul {
-    justify-content: space-around;
+/*    justify-content: space-around; */
   }
 }
 @media screen and (max-width: 400px) {
@@ -266,43 +142,9 @@ ul {
     display: inline;
   }
 }
-@media screen and (max-width: 370px) {
-  .fa {
-    margin-left: -10px;
-  }
-  button {
-    height: 60px;
-    width: 180px;
-    padding: 10px;
-    font-size: 17px;
-  }
-  #studio-btn {
-    margin-left: -90px;
-  }
-  #resume-btn {
-    margin-left: -90px;
-  }
-  #github-btn {
-    margin-left: -90px;
-  }
-  #behance-btn {
-    margin-left: -90px;
-  }
-  #photography-btn {
-  height: 60px;
-  width: 180px;
-  padding: 20px;
-  font-size: 17px;
-  margin-left: -90px;
-  margin-top: 40px;
-}
-body {
-  font-size: 11px;
-}
 a {
-  color: #336666;
   padding: 10px;
-  font-size: 12px;
+  font-size: 16px;
     transition-timing-function: ease-in-out;
     transition-property: font-size;
     transition-duration: .3s;
@@ -311,103 +153,21 @@ a {
       cursor: pointer;
 }
 a:hover {
-  color: #66cccc;
-  font-size: 14px;
+  font-size: 17px;
     transition-timing-function: ease-in-out;
     transition-property: font-size;
     transition-duration: .3s;
     transition-timing-function: ease-in-out;
 
 }
-#name {
-  flex-grow: 1;
-  width: 100px;
-  order: 1;
-  color: #ff3366;
-  font-size: 12px;
-    transition-timing-function: ease-in-out;
-    transition-property: font-size;
-    transition-duration: .3s;
-    transition-timing-function: ease-in-out;
+a:visited {
+  color: inherit;
 }
-#name:hover {
-    color: #66cccc;
-    font-size: 14px;
-    transition-timing-function: ease-in-out;
-    transition-property: font-size;
-    transition-duration: .3s;
-    transition-timing-function: ease-in-out;
-}
-}
-@media screen and (max-width: 330px) {
-  #name {
-    font-size: 10px;
-  }
-  a {
-    font-size: 10px;
-  }
-  .fa {
-    margin-left: -10px;
-    padding-top: 60px;
-  }
-  button {
-    height: 60px;
-    width: 150px;
-    padding: 15px;
-    font-size: 15px;
-  }
-  #studio-btn {
-    margin-left: -75px;
-  }
-  #resume-btn {
-    margin-left: -75px;
-  }
-  #github-btn {
-    margin-left: -75px;
-  }
-  #behance-btn {
-    margin-left: -75px;
-  }
-  #photography-btn {
-  height: 60px;
-  width: 150px;
-  padding: 15px;
-  font-size: 15px;
-  margin-left: -75px;
-  margin-top: 40px;
-}
+a:-webkit-any-link {
+  color: inherit;
 }
 @media screen and (max-width: 290px) {
   .fa {
     margin-left: -20px;
   }
-}
-@media screen and (max-width: 300px) {
-
-  button {
-    height: 40px;
-    width: 150px;
-    padding: 12px;
-    font-size: 15px;
-  }
-  #studio-btn {
-    margin-left: -75px;
-  }
-  #resume-btn {
-    margin-left: -75px;
-  }
-  #github-btn {
-    margin-left: -75px;
-  }
-  #behance-btn {
-    margin-left: -75px;
-  }
-  #photography-btn {
-  height: 40px;
-  width: 150px;
-  padding: 12px;
-  font-size: 15px;
-  margin-left: -75px;
-  margin-top: 40px;
-}
 }

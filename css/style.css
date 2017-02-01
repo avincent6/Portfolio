@@ -3,29 +3,73 @@
 body {
   margin: 0;
   font-family: 'nunito sans', sans-serif;
-  text-align: left;
+  text-align: center;
   color: white;
   font-size: 20px;
   font-weight: 300;
   background: #77DEFF;
-  letter-spacing: 1px;
+  width: 100%;
 }
 h1 {
   font-weight: 400;
   letter-spacing: 2px;
+  text-align: left;
+}
+div {
+  overflow: hidden;
+  text-align: left;
 
 }
-#header {
-  height: 70px;
-  padding-top: 10px;
-  background: none;
-  width: 100%;
+
+a {
   color: white;
+  padding: 40px;
+  padding-left: 0;
+  font-size: 20px;
+    transition-timing-function: ease-in-out;
+    transition-property: font-size;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    text-decoration: none;
+      cursor: pointer;
+}
+a:hover {
+  color: #FFE0EB;
+  font-size: 21px;
+    transition-timing-function: ease-in-out;
+    transition-property: font-size;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+
+}
+
+#header {
+  height: 100px;
+  padding-top: 40px;
+  margin-left: 150px;
+  background: none;
+  width: 80%;
+  color: white;
+  overflow: hidden;
+}
+.draw {
+  width: 80%;
+  max-width: 680px;
+  margin-left: 20px;
 }
 .hello {
-  height: auto;
-  padding: 4em;
+  padding: 30px;
 }
+@media screen and (min-width: 750px) {
+  .hello {
+    padding: 0 5em 0 0;
+    margin-left: 150px;
+  }
+  #header {
+    margin-left: 0 5em;
+  }
+}
+
 p {
   font-family: 'Roboto';
   color: white;
@@ -34,28 +78,16 @@ p {
   font-family: 'open sans', sans-serif;
   line-height: 30px;
 }
-div {
-  margin: 0;
+.u {
   padding: 0;
-}
-button {
-  height: 80px;
-  width: 250px;
-  padding: 20px;
-  border: 2px #336666 solid;
-  color: #336666;
-  font-family: 'raleway', sans-serif;
-  font-size: 20px;
-  text-align: center;
-  background: none;
-  cursor: pointer;
-  position: absolute;
-  z-index: 1000;
-}
-button:hover {
-  opacity: .7;
+  color: #FF307B;
+  text-decoration: underline;
 }
 #name {
+  position: absolute;
+  z-index: -1;
+  top: 15px;
+  left: 15px;
   color: #ff3366;
   width: 95px;
     transition-timing-function: ease-in-out;
@@ -73,7 +105,6 @@ button:hover {
 }
 ul {
   list-style-type: none;
-  margin-left: 100px;
   display: flex;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
@@ -82,92 +113,61 @@ ul {
   align-items: center;
 }
 ul:first-child {
-  margin: 20px;
+  padding: 20px;
 }
-.left {
-  width: 150px;
-  height: 100%;
-  background: white;
-  opacity: .5;
-  position: fixed;
-  top:0;
-  left:0;
-  z-index: -1;
+@media screen and (max-width: 400px) {
+  #name {
+    width: 55px;
+    top: 10px;
+    left: 10px;
+  }
+  #header {
+    margin-left: 70px;
+    height: 50px;
+    padding-top: 10px;
+  }
+  .hello {
+    padding: 20px;
+  }
+  a {
+    padding: 20px;
+    font-size: 15px;
+  }
+  a:hover {
+    font-size: 16px;
+  }
+  ul {
+  }
 }
 
-#audrey {
-  height: 170px;
-  width: auto;
-  left: 30px;
-}
 .fa {
-  color: #336666;
-  margin-top: -40px;
+  color: white;
+  width: 25px;
 }
 #footer {
-  width: 400px;
-  height: 200px;
-  padding-bottom: 30px;
+  width: 320px;
   margin: 0 auto;
   background: none;
   text-align: center;
 }
-#portrait {
-  display: inline;
+#footer ul {
+  padding: 0;
+  min-width: 320px;
+}
+#footer ul li {
+  padding: 20px;
+}
+#footer a {
+  padding: 0;
 }
 #mail {
-  margin-top: 50px;
-  display: block;
+  display: inline;
 }
-
-@media screen and (max-width: 700px) {
-  #header ul {
-/*    justify-content: space-around; */
-  }
+.fa-2x {
+    font-size: 33px !important;
 }
-@media screen and (max-width: 400px) {
-  #footer {
-    height: 50%;
-    width: 50%;
-  }
-  .fa {
-    padding-top: 80px;
-    margin-left: -55px;
-  }
-  #audrey {
-    height: 100px;
-    margin-left: 0px;
-  }
-  #mail {
-    display: inline;
-  }
-}
-a {
-  padding: 10px;
-  font-size: 16px;
-    transition-timing-function: ease-in-out;
-    transition-property: font-size;
-    transition-duration: .3s;
-    transition-timing-function: ease-in-out;
-    text-decoration: none;
-      cursor: pointer;
-}
-a:hover {
-  font-size: 17px;
-    transition-timing-function: ease-in-out;
-    transition-property: font-size;
-    transition-duration: .3s;
-    transition-timing-function: ease-in-out;
-
-}
-a:visited {
-  color: inherit;
-}
-a:-webkit-any-link {
-  color: inherit;
-}
-@media screen and (max-width: 290px) {
-  .fa {
-    margin-left: -20px;
+@media screen and (max-width: 500px) {
+  .fa-2x {
+      font-size: 27px !important;
   }
 }

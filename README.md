@@ -18,7 +18,9 @@ There were several realizations that helped us achieve the community that we hav
 
 First, we learned that bringing in new members to your community keeps your community young and sustains future growth. We addressed this with programs targeted towards freshmen, such as 
 * freshman-only hackathon (Hello World)
-* one-to-one freshman mentorship program that pairs freshmen with upperclassmen. Purdue would not be successful without the support and constant effort of new organizations. The community as a whole has since organically branched out into creating
+* one-to-one freshman mentorship program that pairs freshmen with upperclassmen. 
+
+Purdue would not be successful without the support and constant effort of new organizations. The community as a whole has since organically branched out into creating
 * BoilerMake (annual hackathon, 500+ hackers from 20+ schools)
 * LaunchPad (mentorship program)
 * Web Dev Club
